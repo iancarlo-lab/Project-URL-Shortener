@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>URL Shortener</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h1> Adrian's Project: URL Shortener Microservice</h1>
+    <h4> User Story:</h4>
+    <ul>
+        <ol>1. I can POST a URL to [project_url]/api/shorturl/new and I will receive a shortened URL in the JSON response. </ol>
+        <ol><p>         Example : {"original_url":"www.google.com","short_url":1}</p></ol>
+        <ol>2. If I pass an invalid URL that doesn't follow the http(s)://www.example.com(/more/routes) format, the JSON response will contain an error like {"error":"invalid URL"}</ol>
+        <ol>3. When I visit shotened URL, it will redirect me to my original Link</ol>
+    </ul>
+    <h3>Short URL Creation</h3>
+    <p>example: POST [project_url]/api/shorturl/new - http(s)://www.example.com</p>
+    
+    <label> URL to be shortened</label>
+    <input type="url">
+    <button type="submit">POST URL</button>
+
+    <h3> Example usage:</h3>
+    <p>[this-project-title]/api/shortulr/3</p>
+
+    <h3>Will redirect to:</h3>
+    <p>www.freecodecamp.org</p>
+
+    
+</body>
+</html>

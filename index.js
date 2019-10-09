@@ -6,7 +6,7 @@ var mongoose = require('mongoose');
 const urlRegex = require('url-regex');
 const cors = require('cors');
 
-mongoose.connect("mongodb+srv://iancarlo:mongodb@cluster0-cerfm.mongodb.net/test?retryWrites=true&w=majority", { useNewUrlParser: true });
+mongoose.connect("mongodb+srv://<user>:<password>@cluster0-cerfm.mongodb.net/test?retryWrites=true&w=majority", { useNewUrlParser: true });
 
 app.use(express.json());
 app.use(bodyParser.urlencoded({extended: 'false'}));
@@ -73,18 +73,6 @@ app.get('/api/:shortid', cors(), function(req, res) {
 
     //});
 });
-
-
-
-
-
-
-
-
-
-
-
-
 
 function tryOne(name){
     console.log('Ready to hack Mr: ' + name);
